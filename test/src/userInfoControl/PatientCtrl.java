@@ -15,7 +15,7 @@ public class PatientCtrl implements MedicalRecordCtrl, GetOperationInput, Entity
 	
 	public PatientCtrl(String hospitalID) {
 		this.medicalRecord = new MedicalRecord(hospitalID);
-		try (BufferedReader br = new BufferedReader(new FileReader("./Appointment_List.csv"))) 
+		try (BufferedReader br = new BufferedReader(new FileReader("test/Appointment_List.csv"))) 
 		{		    
 			String line;
     		while ((line = br.readLine()) != null) 

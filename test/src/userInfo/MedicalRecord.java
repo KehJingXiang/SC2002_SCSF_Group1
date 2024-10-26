@@ -20,7 +20,7 @@ public class MedicalRecord {
 
     public MedicalRecord(String hospitalID){
     	this.patientID = hospitalID;
-    	try (BufferedReader br = new BufferedReader(new FileReader("./Patient_List.csv"))) {		    
+    	try (BufferedReader br = new BufferedReader(new FileReader("test/Patient_List.csv"))) {		    
 			String line;
     		while ((line = br.readLine()) != null) {
 		        // Split the line into columns using the delimiter

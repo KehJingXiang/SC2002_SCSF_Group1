@@ -18,7 +18,7 @@ public class PharmacistCtrl implements AppointmentOutcomeRecordCtrl, GetOperatio
 
 
 	public PharmacistCtrl() {
-		try (BufferedReader br = new BufferedReader(new FileReader("./Appointment_List.csv"))) 
+		try (BufferedReader br = new BufferedReader(new FileReader("test/Appointment_List.csv"))) 
 		{		    
 			String line;
     		while ((line = br.readLine()) != null) 
@@ -42,7 +42,7 @@ public class PharmacistCtrl implements AppointmentOutcomeRecordCtrl, GetOperatio
 		System.out.println("=========================================================");
 		System.out.println("This is the list of appointments with unfulfilled medication prescriptions orders.");
 		
-		String filePath = "./Appointment_List.csv"; // Update this path
+		String filePath = "test/Appointment_List.csv"; // Update this path
         String prescriptionStatusColumn = "Prescription Status"; // Column name for Prescription Status
         int prescriptionStatusIndex = -1; // To be set based on header search
 

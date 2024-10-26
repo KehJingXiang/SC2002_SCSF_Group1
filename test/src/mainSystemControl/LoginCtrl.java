@@ -15,12 +15,15 @@ public class LoginCtrl {
 		
 		switch (role) {
 		case PATIENT:
-			csvFile = "./Patient_List.csv";
+			csvFile = "test/Patient_List.csv";
 			break;
 		case DOCTOR:
 		case PHARMACIST:
+			csvFile = "test/Staff_List.csv";
+			break;
 		case ADMINISTRATOR:
-			csvFile = "./Staff_List.csv";
+			csvFile = "test/Staff_List.csv";
+			break;
 		}
 
 		 

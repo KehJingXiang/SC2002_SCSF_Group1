@@ -17,7 +17,7 @@ public class doctorCtrl{
 	
 	public static int[] getPatientList(String doctorID) {
 		ArrayList<Integer> patientIDs = new ArrayList<>();
-		String filePath = "./Patient_List.csv";  // Ensure this path is correct relative to your project
+		String filePath = "test/Patient_List.csv";  // Ensure this path is correct relative to your project
 
 		try (BufferedReader br = new BufferedReader(new FileReader(filePath))) {
 			String line;
